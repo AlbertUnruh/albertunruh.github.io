@@ -1,0 +1,131 @@
+/* may be inspired by https://fqqd.de/media/style1.css */
+
+:root {
+    --accent-color: #00ff11;
+    --albertunruh-color: #3c62f9;
+}
+
+body {
+    margin: 0px;
+    background-color: var(--albertunruh-color);
+    -webkit-user-select:none;
+    -moz-user-select:-moz-none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+header {
+    color: var(--accent-color);
+    font-size: 5em;
+    display: flex;
+    align-items: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 2.5%;
+    background-color: transparent;
+}
+
+.links {
+    width: 50%;
+    display: block;
+    margin: 1em auto;
+}
+
+.link-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: transparent;
+    transition: all .5s;
+    border: 1px solid var(--accent-color);
+    border-radius: .75rem;
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    backdrop-filter: blur(5px);
+    padding: 0.75rem;
+    background-color: transparent;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.link-container:hover {
+    transform: scale(1.05);
+    transition-delay: -.25s;
+    background-color: var(--accent-color);
+}
+
+.link-text {
+    display: contents;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all .5s;
+}
+
+.link-container:hover .link-text {
+    display: block;
+    text-align: center;
+    color: #000000ee;
+    transition-delay: -.25s;
+}
+
+.link-icon {
+    display: block;
+    height: 25px;
+    width: auto;
+    /*z-index: 3;*/
+    transition: all .5s;
+    background-color: var(--icon-color);
+    mask-size: cover;
+    display: inline-block;
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(0deg);
+}
+
+.au-icon {mask-image: url("/icons/au.png");-webkit-mask-image: url("/icons/au.png");}
+.mastodon-icon {mask-image: url("/icons/mastodon.png");-webkit-mask-image: url("/icons/mastodon.png");}
+.github-icon {mask-image: url("/icons/github.png");-webkit-mask-image: url("/icons/github.png");}
+.arschwasser-icon {mask-image: url("/icons/arschwasser.png");-webkit-mask-image: url("/icons/arschwasser.png");}
+.threema-icon {mask-image: url("/icons/threema.png");-webkit-mask-image: url("/icons/threema.png");}
+.soundcloud-icon {mask-image: url("/icons/soundcloud.png");-webkit-mask-image: url("/icons/soundcloud.png");}
+.namemc-icon {mask-image: url("/icons/namemc.png");-webkit-mask-image: url("/icons/namemc.png");}
+.email-icon {mask-image: url("/icons/email.png");-webkit-mask-image: url("/icons/email.png");}
+.password-icon {mask-image: url("/icons/password.png");-webkit-mask-image: url("/icons/password.png");}
+
+.link-container:hover .link-icon {
+    filter: saturate(0%) brightness(0%);
+    transition-delay: -.25s;
+}
+
+.link-container .link-icon {
+    align-self: center;
+}
+
+.link-container .link-text {
+    margin: 0;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 35px;
+    margin-left: 10px;
+}
+
+.todo {
+    font-size: 69%;
+    font-style: italic;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
