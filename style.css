@@ -75,26 +75,12 @@ header {
 
 .link-icon {
     display: block;
-    height: 25px;
+    height: 1.5rem;
     width: auto;
-    /*z-index: 3;*/
+    z-index: 3;
     transition: all .5s;
-    background-color: var(--icon-color);
-    mask-size: cover;
-    display: inline-block;
-    filter: invert(1) sepia(1) saturate(5) hue-rotate(0deg);
+    filter: none;
 }
-
-.au-icon {mask-image: url("/icons/au.png");-webkit-mask-image: url("/icons/au.png");}
-.mastodon-icon {mask-image: url("/icons/mastodon.png");-webkit-mask-image: url("/icons/mastodon.png");}
-.github-icon {mask-image: url("/icons/github.png");-webkit-mask-image: url("/icons/github.png");}
-.6zeitreisende-icon {mask-image: url("/icons/6zeitreisende.png");-webkit-mask-image: url("/icons/6zeitreisende.png");}
-.arschwasser-icon {mask-image: url("/icons/arschwasser.png");-webkit-mask-image: url("/icons/arschwasser.png");}
-.threema-icon {mask-image: url("/icons/threema.png");-webkit-mask-image: url("/icons/threema.png");}
-.soundcloud-icon {mask-image: url("/icons/soundcloud.png");-webkit-mask-image: url("/icons/soundcloud.png");}
-.namemc-icon {mask-image: url("/icons/namemc.png");-webkit-mask-image: url("/icons/namemc.png");}
-.email-icon {mask-image: url("/icons/email.png");-webkit-mask-image: url("/icons/email.png");}
-.password-icon {mask-image: url("/icons/password.png");-webkit-mask-image: url("/icons/password.png");}
 
 .link-container:hover .link-icon {
     filter: saturate(0%) brightness(0%);
