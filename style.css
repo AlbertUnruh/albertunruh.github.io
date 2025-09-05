@@ -25,6 +25,29 @@ header {
     background-color: transparent;
 }
 
+footer {
+    color: var(--accent-color);
+    font-size: .69em;
+    opacity: 69%;
+    margin: 4em;
+}
+
+footer div {
+    justify-content: center;
+    display: flex;
+    white-space: pre-wrap;
+}
+
+.note {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.note a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .links {
     width: 50%;
     display: block;
