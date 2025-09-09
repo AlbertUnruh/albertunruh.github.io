@@ -3,6 +3,7 @@
 :root {
     --accent-color: #00ff11;
     --albertunruh-color: #3c62f9;
+    --kyle-alessandro: lighter;
 }
 
 body {
@@ -39,7 +40,7 @@ footer div {
 }
 
 .note {
-    font-weight: lighter;
+    font-weight: var(--kyle-alessandro);
     font-style: italic;
 }
 
