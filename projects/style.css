@@ -1,0 +1,7 @@
+@import "/root.css";
+@import "/style.css";
+
+body {
+    margin: 0px;
+    background-color: var(--albertunruh-color);
+}
