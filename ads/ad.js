@@ -6,7 +6,7 @@ This is just bait for ad-blocker!
 ~AlbertUnruh
 */
 
-document.getElementById("no-adblock").style.display = "block";
+document.getElementById("no-adblock").style.display = "flex";
 
 console.log("Well, this could've been an ad which just loaded...")
 console.log("~AlbertUnruh")
